@@ -1,9 +1,5 @@
-function ShowCityParagraph(){
-    var selectElement = event.target;
-    var value = selectElement.value;
-    var paragraph = document.getElementsByTagName("p").id
-    console.log(value)
-    if (value == paragraph){
-        paragraph.style.display = "block"
-    }
-}
+function ShowCitySelected(selTag) {
+    var selectCity = document.getElementById("CitySelector");
+    var selectedOption = selectCity.options[selectCity.selectedIndex].text;
+    document.getElementById("output").innerHTML = "Vous avez choisi " + selectedOption;
+  }

@@ -10,18 +10,15 @@
 <body>
     <form>
         <label> Ville: </label>
-        <select id="CitySelector" onchange="ShowCityParagraph()">
-            <option value="">Selctionner une ville</option>
-            <option value="Rennes">Rennes</option>
-            <option value="Nantes">Nantes</option>
-            <option value="Niort">Niort</option>
+        <select id="CitySelector" onchange="ShowCitySelected()">
+            <option value="None">Selctionner une ville</option>
+            <option value="1">Rennes</option>
+            <option value="2">Nantes</option>
+            <option value="3">Niort</option>
         </select>
     </form>
 
-    <div class="output paragraphes">
-        <p id="Rennes">Rennes est la préfecture de la région Bretagne, au nord-ouest de la France. Elle est connue pour ses maisons médiévales à colombages et son immense cathédrale. Le parc du Thabor dispose d'une roseraie et d'une volière. Au sud de la Vilaine, le musée des Beaux-Arts expose des œuvres de Boticelli, Rubens et Picasso. Le centre culturel des Champs Libres abrite le musée de Bretagne et l'espace des Sciences, doté d'un planétarium.</p>
-        <p id="Nantes">Nantes est une commune de l'ouest de la France, située au sud du Massif armoricain, qui s'étend sur les rives de la Loire, à 50 km de l'océan Atlantique.</p>
-        <p id="Niort">Niort est une commune du centre-ouest de la France, chef-lieu du département des Deux-Sèvres. Niort compte une population de 59 005 habitants en 2016. La ville est également le siège de la communauté d'agglomération du Niortais, regroupant 149 220</p>
+    <div id="output"></div>
     </div>
 
 </body>
