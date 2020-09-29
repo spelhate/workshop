@@ -23,7 +23,9 @@ function ShowCitySelected(selTag) {
   document.getElementById("output").innerHTML = "Vous avez choisi " + selTag.options[selTag.selectedIndex].textContent + " qui se situe en " + region + ".";
   var latitude = selTag.options[selTag.selectedIndex].getAttribute("latitude");
   var longitude = selTag.options[selTag.selectedIndex].getAttribute("longitude");
-  mymap.setView([latitude, longitude], 10);
+  mymap.flyTo([latitude, longitude], 10);
+  L.marker([latitude, longitude]).addTo(mymap);
+
 }
 
 var select = document.getElementById('CitySelector');
