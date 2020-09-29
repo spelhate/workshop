@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Workshop01</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    
+  <title>Workshop01</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script> 
 </head>
 <body>
     <form>
         <label> Ville: </label>
-        <!--<select id="CitySelector">-->
         <select id="CitySelector" onchange="ShowCitySelected(this)">
-            <!--<option value="None">Selctionner une ville</option>
-            <option data-infos="Bretagne" value="1">Rennes</option>
-            <option data-infos="Pays de Loire" value="2" >Nantes</option>
-            <option data-infos="Poitou" value="3">Niort</option>-->
         </select>
     </form>
 
     <div id="output"></div>
-    </div>
+    <div id="mapId"></div>
+
     <script type="text/javascript" src="script.js"></script>
+    
 </body>
 
 
