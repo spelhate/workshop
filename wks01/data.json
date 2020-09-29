@@ -2,17 +2,23 @@
     {
         "id": 1,
         "city": "Rennes",
-        "infos": "Bretagne"
+        "infos": "Bretagne",
+        "lat": 48.0833,
+        "lon": -1.6833
     },
     {
         "id": 2,
         "city": "Nantes",
-        "infos": "Pays de la Loire"
+        "infos": "Pays de la Loire",
+        "lat": 47.2173,
+        "lon": -1.5534
     },
     {
         "id": 3,
         "city": "Niort",
-        "infos": "Poitou"
+        "infos": "Poitou",
+        "lat": 46.3167,
+        "lon": -0.4667
     }
 
 ]
